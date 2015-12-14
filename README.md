@@ -33,3 +33,8 @@ Compiling sass to css
 $ npm start
 # with npm you can run tasks defined in package.json
 ``` 
+
+```
+Music courtesy : http://freemusicarchive.org
+All credits belong to the artists
+```
