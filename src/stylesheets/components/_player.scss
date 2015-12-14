@@ -1,0 +1,35 @@
+.mp-player {
+	position: relative;
+	width: 15.5rem;
+	background: map-get($colors, primary);
+	color: white;
+	border-radius: 7px;
+  	overflow: hidden;
+  	box-shadow:0 3px 3px #dcd5d5;
+}
+
+.my-player-appear {
+    transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+
+
+  	&.my-player-appear-active {
+	   	transform: translateY(0);
+	    -moz-transform: translateY(0);
+	    -webkit-transform: translateY(0);
+	    -webkit-transition: -webkit-transform 0.7s cubic-bezier(.64,1.87,.64,.64);
+		-moz-transition: -moz-transform 0.7s cubic-bezier(.64,1.87,.64,.64);
+		-o-transition: -o-transform 0.7s cubic-bezier(.64,1.87,.64,.64);
+		transition: transform 0.7s cubic-bezier(.64,1.87,.64,.64);
+	}
+ }
+
+ .my-player-leave {
+ 	opacity: 1;
+
+	&.my-player-leave-active {
+		opacity: 0;
+		-webkit-transform: translateY(50px);
+	}
+}

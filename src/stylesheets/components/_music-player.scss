@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic);
+
+.mp-music-player {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-60%);
+	transform: translate(-50%,-60%);
+	-moz-transform: translate(-50%,-60%);
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	*, *:before, *:after {
+		box-sizing: border-box;
+		position: relative;
+	}
+}
