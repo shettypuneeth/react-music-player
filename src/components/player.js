@@ -177,7 +177,7 @@ export default class Player extends React.Component {
     }
 
     /*
-     * Main event handling method. Listens to all the audio player events and calls the _updateStateEventHandler method.
+     * Main event handling method. Listens to all the audio player events and calls the _updateStateEventHandler method
     */
     handleEvent (event) {
     	var _ref;

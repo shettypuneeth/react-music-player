@@ -75,7 +75,6 @@ export default class MusicPlayer extends React.Component {
 						songs={songs}/>
 				</CSSTransitionGroup>		
 			</div>
-
 		);
 	}
 }
