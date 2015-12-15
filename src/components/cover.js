@@ -3,7 +3,6 @@ import classnames from 'classnames';
 const {CSSTransitionGroup} = React.addons;
 
 export default class Cover extends React.Component {
-
 	shouldComponentUpdate (nextProps, nextState) {
 		return this.props.imageUri !== nextProps.imageUri || this.props.isErrored !== nextProps.isErrored;
 	}

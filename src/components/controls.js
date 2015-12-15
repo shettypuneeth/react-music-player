@@ -3,9 +3,7 @@ import classnames from 'classnames';
 
 import Progressbar from './progressBar';
 
-
 export default class Controls extends React.Component {
-
 	render() {
 		let track = this.props.track;
 		let playButtonClass = classnames('mp-control__button fa', {

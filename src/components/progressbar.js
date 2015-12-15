@@ -11,8 +11,9 @@ export default class Progressbar extends React.Component {
 		};
 		return (
 			<span className={classes}>
-      			<span className="mp-progress__bar" style={progressStyle}></span>
-    		</span>
+    			<span className="mp-progress__bar" style={progressStyle}></span>
+  		</span>
 		);
 	}
 }
+

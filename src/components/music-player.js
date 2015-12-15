@@ -67,7 +67,7 @@ export default class MusicPlayer extends React.Component {
 	          }
 	        ]
 	      }
-	    ];
+	   ];
 		return (
 			<div className="mp-music-player">
 				<CSSTransitionGroup transitionName="my-player" transitionAppear={true} transitionAppearTimeout={500} component="div">

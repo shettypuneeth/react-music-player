@@ -47,9 +47,9 @@ export default class Player extends React.Component {
     let _ref, _i, _len, eventName;
     _ref = this.audioPlayerEvents;
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-          eventName = _ref[_i];
-          this.player.addEventListener(eventName, this);
-        }
+      eventName = _ref[_i];
+      this.player.addEventListener(eventName, this);
+    }
     return this.player.addEventListener("timeupdate", this);
   }
 
@@ -57,9 +57,9 @@ export default class Player extends React.Component {
     let _ref, _i, _len, eventName;
     _ref = this.audioPlayerEvents;
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-          eventName = _ref[_i];
-          this.player.removeEventListener(eventName, this);
-        }
+      eventName = _ref[_i];
+      this.player.removeEventListener(eventName, this);
+    }
     return this.player.removeEventListener("timeupdate", this);
   }
 
@@ -74,8 +74,8 @@ export default class Player extends React.Component {
 
   _percentCompleted () {
     let number;
-        number = ~~((this.player.currentTime / this.player.duration) * 10000);
-        return number / 10000;
+    number = ~~((this.player.currentTime / this.player.duration) * 10000);
+    return number / 10000;
   }
 
   _togglePlayPause () {
@@ -124,19 +124,19 @@ export default class Player extends React.Component {
   }
 
   _isPlaying () {
-      return this.player && !this.player.paused;
+    return this.player && !this.player.paused;
   };
 
   _isPaused () {
     return this.player && this.player.paused;
-  };
+  }
 
   _isLoading () {
-  if (this._isEmpty()) {
-    return false;
+    if (this._isEmpty()) {
+      return false;
+    }
+    return this.player.networkState === this.player.NETWORK_LOADING && this.player.readyState < this.player.HAVE_FUTURE_DATA;
   }
-  return this.player.networkState === this.player.NETWORK_LOADING && this.player.readyState < this.player.HAVE_FUTURE_DATA;
-  };
 
   _isEmpty () {
     return this.player.readyState === this.player.HAVE_NOTHING;
@@ -181,11 +181,11 @@ export default class Player extends React.Component {
   */
   handleEvent (event) {
     var _ref;
-      if (_ref = event.type, this.__indexOf.call(this.audioPlayerEvents, _ref) >= 0) {
-        return this._updateStateEventHandler(event);
-      } else if (event.type === "timeupdate") {
-        return this._timeUpdate(event);
-      }
+    if (_ref = event.type, this.__indexOf.call(this.audioPlayerEvents, _ref) >= 0) {
+      return this._updateStateEventHandler(event);
+    } else if (event.type === "timeupdate") {
+      return this._timeUpdate(event);
+    }
   } 
 
   render () {
