@@ -108,8 +108,7 @@ body {
       position: relative;
       height: 17rem;
       width: 100%;
-      opacity: 0.9;
-      -webkit-backface-visibility: hidden; }
+      opacity: 0.9; }
       .music-player-component .mp-cover > .mp-cover__albumart > img {
         position: absolute;
         top: 0;
