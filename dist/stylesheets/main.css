@@ -107,8 +107,7 @@ body {
     .music-player-component .mp-cover > .mp-cover__albumart {
       position: relative;
       height: 17rem;
-      width: 100%;
-      opacity: 0.9; }
+      width: 100%; }
       .music-player-component .mp-cover > .mp-cover__albumart > img {
         position: absolute;
         top: 0;

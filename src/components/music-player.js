@@ -23,49 +23,49 @@ export default class MusicPlayer extends React.Component {
             src: "media/O_Tannenbaum.ogg",
             type: "audio/ogg"
           }
-      ]
+      	]
   	  }, {
-    		id: "S2",
-    		image: "img/moonlight.jpg",
-    		artist: "Kai Engel",
-    		name: "Moonlight Reprise",
-    		srcs: [
-    		  {
-    			src: "media/Moonlight_Reprise.mp3",
-    			type: "audio/mp3"
-    		  }, {
-    			src: "media/Moonlight_Reprise.ogg",
-    			type: "audio/ogg"
-    		  }
-  		  ]
-  	  }, {
-    		id: "S3",
-    		image: "img/brokeforfree.jpg",
-    		artist: "Night Owl",
-    		name: "Broke For Free",
-    		srcs: [
-    		  {
-      			src: "media/Broke_For_Free.mp3",
-      			type: "audio/mp3"
-    		  }, {
-      			src: "media/Broke_For_Free.ogg",
-      			type: "audio/ogg"
-    		  }
-    		]
-    	  }, {
-    		id: "S4",
-    		image: "img/sunset.jpg",
-    		artist: "Kai Engel",
-    		name: "Sunset",
-    		srcs: [
-    		  {
-      			src: "media/Sunset.mp3",
-      			type: "audio/mp3"
-    		  }, {
-      			src: "media/Sunset.ogg",
-      			type: "audio/ogg"
-    		  }
-		    ]
+        id: "S2",
+        image: "img/moonlight.jpg",
+        artist: "Kai Engel",
+        name: "Moonlight Reprise",
+        srcs: [
+          {
+            src: "media/Moonlight_Reprise.mp3",
+            type: "audio/mp3"
+          }, {
+            src: "media/Moonlight_Reprise.ogg",
+            type: "audio/ogg"
+          }
+        ]
+      }, {
+        id: "S3",
+        image: "img/brokeforfree.jpg",
+        artist: "Night Owl",
+        name: "Broke For Free",
+        srcs: [
+          {
+            src: "media/Broke_For_Free.mp3",
+            type: "audio/mp3"
+          }, {
+            src: "media/Broke_For_Free.ogg",
+            type: "audio/ogg"
+          }
+        ]
+      }, {
+        id: "S4",
+        image: "img/sunset.jpg",
+        artist: "Kai Engel",
+        name: "Sunset",
+        srcs: [
+          {
+            src: "media/Sunset.mp3",
+            type: "audio/mp3"
+          }, {
+            src: "media/Sunset.ogg",
+            type: "audio/ogg"
+          }
+        ]
 	   }
     ];
     return (
